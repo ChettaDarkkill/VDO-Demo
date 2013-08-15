@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?init class="org.zkoss.zkplus.databind.AnnotateDataBinderInit" ?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:h="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
+
+    <window apply="vdo.IndexComposer">
+
+        <hbox align="center">
+            <image src="${z.resource(dir:'images', file:'zkpowered_s.png')}"/>
+            <image src="${z.resource(dir:'images', file:'grails_logo.png')}"/>
+        </hbox>
+
+        <vbox>
+            <image id="video" src="http://tech.mthai.com/wp-content/uploads/2011/04/google-youtube-logo.jpg"/>
+
+            <hbox>
+                <textbox id="txtComment"/>
+                <button id="btnComment">
+                    Comment
+                </button>
+            </hbox>
+
+            <vbox id="comments">
+            </vbox>
+
+
+        </vbox>
+
+    </window>
+
+</zk>
